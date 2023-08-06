@@ -1,0 +1,17 @@
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "kay"
+version = "0.0.1"
+description = "Retrieving the most relevant context for your LLMs"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+
+dependencies = [
+   'requests >= 2'
+]
+requires-python = ">=3.8.1,<4.0"
