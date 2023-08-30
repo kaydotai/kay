@@ -1,20 +1,17 @@
 <div align="center">
-<!--   <a href="http://kay.ai">
-    <img src="https://i.ibb.co/x5TTmQC/64ea2e977e148519763205e7-logo-test.png" alt="Logo" width="167" height="47">
-  </a> -->
+  <a href="http://kay.ai">
+    <img src="https://i.ibb.co/7jT6nnL/photo-2023-08-30-10-05-04.jpg" alt="Logo" width="100" height="100">
+  </a>
 
   <h3 align="center">kay</h3>
 
   <p align="center">
-    Context retrieval apis to power your LLMs! <br/>
-   🚀 <a href="https://playground.embedding.store/wikipedia/?__theme=light"><strong>Recent Wikipedia embeddings launch »</strong></a>
+    Data API for Context Retrieval <br/>
+   🚀 <a href="https://kay.ai"><strong>Recent Company Data Embeddings »</strong></a>
  
   </p>
   <a href="https://pepy.tech/project/embedstore" alt="Downloads">
         <img src="https://static.pepy.tech/personalized-badge/embedstore?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads/month" /></a>
-  <a href="https://discord.com/invite/hAnE4e5T6M">
-    <img src="https://img.shields.io/discord/1111412701651013713?label=discord" />
-  </a>
   <a>
     <img src="https://img.shields.io/github/license/embeddingstore/embedstore"/>
   </a>
