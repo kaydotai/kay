@@ -64,11 +64,11 @@ print(context[0])
 Read more [here](#usage) for detailed usage guidelines. 
 
 ## What is this?
-We are building context retrieval apis for developers creating chatbots, copilots and search tools on top of LLMs. You no longer need to maintain scraping and embedding pipelines, and instead focus on building your product. 
+We are building context retrieval apis for developers to connect their LLMs to global data with fully hosted embeddings.
 
 Read more about RAG (retrieval augmented generation) [here](https://twitter.com/pwang_szn/status/1663123050097946624). 
 
-<img src="https://i.ibb.co/jgQc4z9/Mindmap.png" alt="Logo">
+<img src="https://i.ibb.co/hR07N8k/content.png" alt="Logo">
 
 ## Usage
 ### More about `KayRetriever` class
@@ -87,13 +87,7 @@ The `query()` function takes three inputs:
 - `num_context (int)`: (Optional) Number of context you want to fetch. Default = 6
 - `instruction (str)`: (Optional) Specific instructions to the retriever in natural language (eg: "Be more generic and broad", "Retrieve specific numbers", etc.).
 
-#### Example 1:  TBD
-
-```python
-
-```
-
-#### Example 2:  TBD
+#### Example:  TBD
 
 ```python
 
@@ -132,6 +126,60 @@ By default, the API returns the top 6 contexts right now. We will be adding opti
 **Sample Response**
 TBD
 ```json
+{
+    "contexts": [
+        {
+            "_additional": {
+                "id": "3be8769e-a0fb-4741-845b-b0dcaaeed839"
+            },
+            "chunk_embed_text": "Company Name: CAMPBELL SOUP CO \n Company Industry: FOOD AND KINDRED PRODUCTS \n Form Title: 10-Q 2023-Q1 \n Form Section: Risk Factors \n Text: The ultimate impact depends on the severity and duration of the pandemic, including the emergence and spread of new COVID 19 variants and resurgences, the continued availability and effectiveness of vaccines and actions taken by government authorities and other third parties in response to the pandemic.We will continue to evaluate the extent to which the COVID 19 pandemic will impact our business, consolidated results of operations and financial condition.Net periodic pension and postretirement benefit income excluding any actuarial losses or gains is estimated to be approximately $35 million lower in 2023, subject to the impact of interim remeasurements.The decrease in 2023 is due to increases in discount rates used to determine the benefit obligations and a decline in the market value of plan assets.Summary of Results This Summary of Results provides significant highlights from the discussion and analysis that follows.Net sales increased 15% in the quarter to $2.575 billion due to inflation driven pricing and sales allowances, partially offset by volume declines.Gross profit, as a percent of sales, was 32.4% in 2023 compared to 32.3% in the prior year quarter.The increase was primarily due to inflation driven pricing actions, supply chain productivity improvements, lower promotional spending and lower restructuring related costs, partially offset by higher cost inflation and other supply chain costs as well as unfavorable volume/mix.",
+            "chunk_type": "text",
+            "chunk_years_mentioned": [
+                2023
+            ],
+            "company_name": "CAMPBELL SOUP CO",
+            "company_sic_code_description": "FOOD AND KINDRED PRODUCTS",
+            "data_source": "10-Q",
+            "data_source_link": "https://www.sec.gov/Archives/edgar/data/16732/000001673222000156",
+            "data_source_publish_date": "2023-01-01T00:00:00Z",
+            "data_source_uid": "0000016732-22-000156",
+            "title": "CAMPBELL SOUP CO |  10-Q 2023-Q1 "
+        },
+        {
+            "_additional": {
+                "id": "aa417ac9-2da0-48a5-9c9d-2a8b5a7d55f3"
+            },
+            "chunk_embed_text": "Company Name: NIGHTFOOD HOLDINGS INC \n Company Industry: SUGAR & CONFECTIONERY PRODUCTS \n Form Title: 10-Q 2023-Q1 \n Form Section: Financial Statements \n Text: The accompanying financial statements do not include any adjustments to reflect the possible future effects on recoverability and reclassification of assets or the amounts and classification of liabilities that may result from the outcome of this uncertainty.The outbreak of the novel coronavirus (COVID 19), including the measures to reduce its spread, and the impact on the economy, cannot fully be understood and identified.Indications to date are that there are somewhat offsetting factors relating to the impact on our Company.Industry data shows that supermarket sales remain up, with more people spending more time at home.Anecdotally and statistically, snacking activity is also up while consumers are reporting a decrease in sleep quality and sleep satisfaction.The offsetting factors are the impact of the virus on the overall economy, and the impact that a down economic period can have on consumer behavior, including potential reductions in travel, hotel occupancy, and trial of new brands.Greater unemployment, recession, and other possible unforeseen factors are shown to have an impact.Research indicates that consumers are less likely to try new brands during economic recession and stress, returning to the legacy brands they've known for decades.",
+            "chunk_type": "text",
+            "chunk_years_mentioned": [],
+            "company_name": "NIGHTFOOD HOLDINGS INC",
+            "company_sic_code_description": "SUGAR & CONFECTIONERY PRODUCTS",
+            "data_source": "10-Q",
+            "data_source_link": "https://www.sec.gov/Archives/edgar/data/1593001/000121390022074226",
+            "data_source_publish_date": "2023-01-01T00:00:00Z",
+            "data_source_uid": "0001213900-22-074226",
+            "title": "NIGHTFOOD HOLDINGS INC |  10-Q 2023-Q1 "
+        },
+        {
+            "_additional": {
+                "id": "9dec26c4-6f3b-482f-be9c-f4bacd8f0f09"
+            },
+            "chunk_embed_text": "Company Name: BEYOND MEAT INC \n Company Industry: FOOD AND KINDRED PRODUCTS \n Form Title: 10-K 2022-FY \n Form Section: Risk Factors \n Text: Starting in 2020, the COVID 19 pandemic had a significant impact on the worldwide economy and, in turn, our business, financial condition and results of operations.Although we expect the impacts of the pandemic, and the resulting effects on the economy, on us to continue to decline, we are likely to see certain prolonged effects.For example, certain of our QSR customers reduced their menu offerings in response to COVID 19, which negatively impacted plant based food items.If those customers are slow to re expand their menus, or choose not to put plant based products back on their menus, our business could be adversely affected.As global economic conditions continue to be volatile or uncertain and recessionary or inflationary pressures exist, trends in consumer discretionary spending also remain unpredictable and subject to changes.We have seen consumers shift purchases to lower priced or other perceived value offerings during economic downturns as a result of various factors, including job losses, inflation, higher taxes, reduced access to credit, change in federal economic policy and recent international trade disputes.In particular, consumers have reduced the amount of plant based food products that they purchase where there are conventional animal based protein offerings, which generally have lower retail prices.In addition, consumers may choose to purchase private label products rather than branded products because they are generally less expensive.",
+            "chunk_type": "text",
+            "chunk_years_mentioned": [
+                2020
+            ],
+            "company_name": "BEYOND MEAT INC",
+            "company_sic_code_description": "FOOD AND KINDRED PRODUCTS",
+            "data_source": "10-K",
+            "data_source_link": "https://www.sec.gov/Archives/edgar/data/1655210/000165521023000017",
+            "data_source_publish_date": "2022-01-01T00:00:00Z",
+            "data_source_uid": "0001655210-23-000017",
+            "title": "BEYOND MEAT INC |  10-K 2022-FY "
+        }
+    ],
+    "success": "true"
+}
 
 ```
 
