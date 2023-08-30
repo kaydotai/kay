@@ -17,11 +17,9 @@
   </a>
   <p align="center">
     <br />
-     <a href="https://colab.research.google.com/drive/1yhBhLmiPNtc06qVnjQRLsWuQDID3_cwl?usp=sharing">Try on Google Colab</a>
+     <a href="https://kay.ai">Try it out!</a>
     ∙
-    <a href="https://playground.embedding.store/podcasts?__theme=light">Test API</a>
-    ∙
-    <a href="https://www.embedding.store/">Subscribe for Early Access</a>
+    <a href="https://kay.ai">Get API Key</a>
   </p>
 </div>
 
