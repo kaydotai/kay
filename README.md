@@ -15,12 +15,12 @@
   <a>
     <img src="https://img.shields.io/github/license/kaydotai/kay"/>
   </a>
-  <p align="center">
+<!--   <p align="center">
     <br />
      <a href="https://kay.ai">Try it out!</a>
     ∙
     <a href="https://kay.ai">Get API Key</a>
-  </p>
+  </p> -->
 </div>
 
 
