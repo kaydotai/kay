@@ -124,7 +124,6 @@ Add the API key in the header : `{'API-Key'='<YOUR_API_KEY>'`
 By default, the API returns the top 6 contexts right now. We will be adding options to control this soon.
 
 **Sample Response**
-TBD
 ```json
 {
     "contexts": [
@@ -182,9 +181,3 @@ TBD
 }
 
 ```
-
-## Datasets
-TBD
-
-## Get involved
-TBD
