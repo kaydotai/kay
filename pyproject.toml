@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "kay"
 version = "0.0.1"
-description = "Retrieving the most relevant context for your LLMs"
+description = "Data API for Context Retrieval"
 readme = "README.md"
 license = { file = "LICENSE" }
 
