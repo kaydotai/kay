@@ -12,7 +12,14 @@
   </p>
   <a href="https://pepy.tech/project/kay" alt="Downloads">
         <img src="https://static.pepy.tech/personalized-badge/kay?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads/month" /></a>
+
   <a>
+    <img src="https://img.shields.io/discord/1111412701651013713?logo=discord"/>
+  </a>
+  <a>
+    <img src="https://img.shields.io/twitter/follow/vishalrohra_?style=flat-square&logo=twitter"/>
+  </a>
+    <a>
     <img src="https://img.shields.io/github/license/kaydotai/kay"/>
   </a>
 <!--   <p align="center">
