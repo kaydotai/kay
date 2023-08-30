@@ -87,12 +87,6 @@ The `query()` function takes three inputs:
 - `num_context (int)`: (Optional) Number of context you want to fetch. Default = 6
 - `instruction (str)`: (Optional) Specific instructions to the retriever in natural language (eg: "Be more generic and broad", "Retrieve specific numbers", etc.).
 
-#### Example:  TBD
-
-```python
-
-```
-
 
 ### Using `/retrieve` endpoint 
 **Sample code**
