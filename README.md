@@ -10,10 +10,10 @@
    🚀 <a href="https://kay.ai"><strong>Recent Company Data Embeddings »</strong></a>
  
   </p>
-  <a href="https://pepy.tech/project/embedstore" alt="Downloads">
-        <img src="https://static.pepy.tech/personalized-badge/embedstore?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads/month" /></a>
+  <a href="https://pepy.tech/project/kay" alt="Downloads">
+        <img src="https://static.pepy.tech/personalized-badge/kay?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads/month" /></a>
   <a>
-    <img src="https://img.shields.io/github/license/embeddingstore/embedstore"/>
+    <img src="https://img.shields.io/github/license/kaydotai/kay"/>
   </a>
   <p align="center">
     <br />
