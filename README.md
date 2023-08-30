@@ -13,10 +13,10 @@
   <a href="https://pepy.tech/project/kay" alt="Downloads">
         <img src="https://static.pepy.tech/personalized-badge/kay?period=month&units=international_system&left_color=grey&right_color=brightgreen&left_text=downloads/month" /></a>
 
-  <a>
+  <a href="https://discord.gg/hAnE4e5T6M">
     <img src="https://img.shields.io/discord/1111412701651013713?logo=discord"/>
   </a>
-  <a>
+  <a href="https://twitter.com/vishalrohra_">
     <img src="https://img.shields.io/twitter/follow/vishalrohra_?style=flat-square&logo=twitter"/>
   </a>
     <a>
