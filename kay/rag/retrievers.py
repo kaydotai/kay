@@ -18,7 +18,7 @@ class KayRetriever:
         self.data_sources = data_sources    
     
         
-    def query(self,prompt,num_context=6,instruction=None) -> list:
+    def query(self,query,num_context=6,instruction=None) -> list:
         """Get contexts based on given prompt and post processing config"""
                 
         dataset_config = {
@@ -34,9 +34,9 @@ class KayRetriever:
         if instruction:
             retrieval_config['instruction'] = instruction
         
-        embed_store_response = call_kay(prompt,dataset_config,retrieval_config)
+        embed_store_response = call_kay(query,dataset_config,retrieval_config)
         
-        if embed_store_response.get('success') == "true":
+        if embed_store_response.get('success') == True:
             contexts = embed_store_response.get('contexts')
             return contexts
         else:
