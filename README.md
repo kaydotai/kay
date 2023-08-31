@@ -7,7 +7,7 @@
 
   <p align="center">
     Data API for Context Retrieval <br/>
-   🚀 <a href="https://kay.ai"><strong>Recent Company Data Embeddings »</strong></a>
+   🚀 <a href="https://www.kay.ai/#playground"><strong>Recent Company Data Embeddings »</strong></a>
  
   </p>
   <a href="https://pepy.tech/project/kay" alt="Downloads">
