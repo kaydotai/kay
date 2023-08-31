@@ -103,7 +103,7 @@ The `query()` function takes three inputs:
   # creating the payload
   payload = {"query": <PROMPT>,"dataset_config": {"dataset_id":"company", "data_sources":["10-K", "10-Q", "8-K", "PressRelease"]},"retrieval_config":{"num_context":6}}
 
-  response = requests.post(url, headers=headers,payload=payload)
+  response = requests.post(url, headers=headers,json=payload)
 
   # check the response
   print(response.json())
