@@ -38,7 +38,7 @@ You have two ways to get started:
 2. Directly call the endpoint : `https://api.kay.ai/retrieve`
 
 
-### Get API Key [here](https://api.kay.ai/register)
+### Get API Key [here](https://kay.ai)
 **Note:** Currently we are rate-limiting all API keys to 100 requests/day
 
 Set the `KAY_API_KEY` as environment variable
