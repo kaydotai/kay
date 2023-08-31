@@ -60,7 +60,7 @@ from kay.rag.retrievers import KayRetriever
 retriever = KayRetriever(dataset_id = "company",  data_sources=["10-K", "10-Q", "8-K", "PressRelease"])
 
 # Query the retriever
-context = retriever.query(query="What is the state of the art in Autonomous Driving security and safety?",num_context=3)
+context = retriever.query(query="What were the biggest strategy changes and partnerships made by Roku in 2023?",num_context=3)
 
 # Examine the retrieved context and then append it to the prompt before you call your LLM
 print(context[0])
