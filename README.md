@@ -101,7 +101,7 @@ The `query()` function takes three inputs:
   headers = {'API-Key': <YOUR_API_KEY>}
 
   # creating the payload
-  payload = {"query": <PROMPT>,"dataset_config": {"dataset_id":"company", "data_sources":["10-K", "10-Q", "8-K", "PressRelease"]},"retrieval_config:{"num_context":6}}
+  payload = {"query": <PROMPT>,"dataset_config": {"dataset_id":"company", "data_sources":["10-K", "10-Q", "8-K", "PressRelease"]},"retrieval_config":{"num_context":6}}
 
   response = requests.post(url, headers=headers,payload=payload)
 
