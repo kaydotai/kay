@@ -11,11 +11,11 @@ class KayRetriever:
         if dataset_id not in available_dataset_id:
             raise InvalidInput(f'Invalid dataset_id : Has to be one of the following - {available_dataset_id}')
     
-    def __init__(self, dataset_id="company", data_sources=None) -> None:
+    def __init__(self, dataset_id="company", data_types=None) -> None:
         """Init params."""
         self._validate_dataset_id(dataset_id)
         self.dataset_id = dataset_id
-        self.data_sources = data_sources    
+        self.data_types = data_types    
     
         
     def query(self,query,num_context=6,instruction=None) -> list:
@@ -23,7 +23,7 @@ class KayRetriever:
                 
         dataset_config = {
             "dataset_id":self.dataset_id,
-            "data_sources": self.data_sources
+            "data_types": self.data_types
         }
         
         

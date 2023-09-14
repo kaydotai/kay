@@ -57,7 +57,7 @@ In a few lines of code, you can now start retrieving relevant context to get bet
 from kay.rag.retrievers import KayRetriever
 
 # Initialize the retriever
-retriever = KayRetriever(dataset_id = "company",  data_sources=["10-K", "10-Q", "8-K", "PressRelease"])
+retriever = KayRetriever(dataset_id = "company",  data_types=["10-K", "10-Q", "8-K", "PressRelease"])
 
 # Query the retriever
 context = retriever.query(query="What were the biggest strategy changes and partnerships made by Roku in 2023?",num_context=3)
@@ -81,7 +81,7 @@ Read more about RAG (retrieval augmented generation) [here](https://twitter.com/
 
 Parameters to initialize the class :
 - `dataset_id (str)` : (Required) Dataset to query and retrieve context from (eg: `company`)
-- `data_sources (int)` : (Optional) List of data sources you want us to search on. You can leave it empty and we will figure out the best context given your query.
+- `data_types (int)` : (Optional) List of data sources you want us to search on. You can leave it empty and we will figure out the best context given your query.
 
 
 ### Retrieving contexts based on query
@@ -101,7 +101,7 @@ The `query()` function takes three inputs:
   headers = {'API-Key': <YOUR_API_KEY>}
 
   # creating the payload
-  payload = {"query": <PROMPT>,"dataset_config": {"dataset_id":"company", "data_sources":["10-K", "10-Q", "8-K", "PressRelease"]},"retrieval_config":{"num_context":6}}
+  payload = {"query": <PROMPT>,"dataset_config": {"dataset_id":"company", "data_types":["10-K", "10-Q", "8-K", "PressRelease"]},"retrieval_config":{"num_context":6}}
 
   response = requests.post(url, headers=headers,json=payload)
 
@@ -116,7 +116,7 @@ Add the API key in the header : `{'API-Key'='<YOUR_API_KEY>'`
 | Param             | Details | Type  | Example
 | ------------------- | ----------------------------- | -------- | ----------------------------- |
 | query | the prompt on which context need to be retrieved  | `str`  | `What does Tim Ferris say about productivity?` |
-| dataset_config | a dictionary of dataset specific parameters like dataset_id and data_sources.  |  `dict` | `{"dataset_id":"company", "data_sources":["10-K", "10-Q", "8-K", "PressRelease"]}` |
+| dataset_config | a dictionary of dataset specific parameters like dataset_id and data_types.  |  `dict` | `{"dataset_id":"company", "data_types":["10-K", "10-Q", "8-K", "PressRelease"]}` |
 | retrieval_config | a dictionary of retrieval specific parameters like num_context and instruction. |  `dict` | `{"num_context":6}` |
 
 
