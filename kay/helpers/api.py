@@ -22,8 +22,9 @@ def call_kay(prompt,dataset_config=None,retrieval_config=None):
     # Parsing the response and handling errors
     if response.status_code == 200:
         response_json = response.json()
-        if response_json['success'] == 'true':
-            return {'success':True, 'contexts':response_json.get('contexts')}
+        if response_json["success"] in {True, "true"}:
+            response_json["success"] = True
+            return response_json
         else:
             raise ServerError(f'Server error : {response_json["error"]}. If this persists, please create an issue here - https://github.com/kaydotai/kay/issues')        
     elif response.status_code == 400:
