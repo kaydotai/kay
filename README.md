@@ -125,6 +125,17 @@ By default, the API returns the top 6 contexts right now. We will be adding opti
 **Sample Response**
 ```json
 {
+    "query": "<QUERY>",
+    "request_id": "606e7fe5-af95-4a90-aff6-6d32d55c8b76",
+    "scores": [
+     0.9656413,
+     0.9652504,
+     0.9602122,
+     0.9596866,
+     0.9595352,
+     0.9581479
+    ],
+    "mean_score": 0.9614122666666667,
     "contexts": [
         {
             "_additional": {
