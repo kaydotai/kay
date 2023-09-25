@@ -135,7 +135,6 @@ By default, the API returns the top 6 contexts right now. We will be adding opti
      0.9595352,
      0.9581479
     ],
-    "mean_score": 0.9614122666666667,
     "contexts": [
         {
             "_additional": {
