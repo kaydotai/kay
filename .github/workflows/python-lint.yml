@@ -1,0 +1,27 @@
+# This GitHub Actions workflow is responsible for linting Python code in the repository.
+# It is triggered on every 'push' and 'pull_request' event. The workflow runs on an
+# Ubuntu-latest VM and uses the Black code formatter to check the style of the code
+# located in the "./kay" directory.
+
+name: Python Lint
+
+on: [ push, pull_request ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Run Black
+        uses: psf/black@stable
+        with:
+          options: "--check --verbose"
+          src: "./kay"
+          version: "~= 22.0"
