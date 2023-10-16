@@ -20,4 +20,3 @@ requires-python = ">=3.8.1,<4.0"
 [tool.black]
 line-length = 88
 target-version = ['py311']
-
