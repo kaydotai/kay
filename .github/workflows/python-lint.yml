@@ -10,23 +10,19 @@ on: [ push, pull_request ]
 jobs:
   lint:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: [ '3.8', '3.9', '3.10', '3.11' ]
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v3
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.11"
 
       - name: Run Black
         uses: psf/black@stable
-        run: black --check --verbose ./kay
         with:
           options: "--check --verbose"
           src: "./kay"
           version: "~= 22.0"
-          python-version: ${{ matrix.python-version }}
+          python-version: "3.11"
