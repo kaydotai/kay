@@ -1,0 +1,29 @@
+# This pre-commit configuration file sets up hooks to automatically lint and format
+# code before each commit. It uses the `pre-commit-hooks` repository to add hooks for
+# fixing the end of files and removing trailing whitespace.
+#
+# Installation Instructions:
+# ---------------------------
+# 1. Install pre-commit package:
+#    pip install pre-commit
+#
+# 2. Install the pre-commit hooks to the repository:
+#    pre-commit install
+#
+# Optionally: Run pre-commit on all files to lint and format before making a commit
+# -------------------------------------------------------------------------
+# pre-commit run --all-files
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+      - id: end-of-file-fixer
+        files: ^kay/.*$
+      - id: trailing-whitespace
+        files: ^kay/.*$
+  - repo: https://github.com/psf/black-pre-commit-mirror
+    rev: 23.9.1
+    hooks:
+      - id: black
+        language_version: python3.11

@@ -1,5 +1,5 @@
 [build-system]
-requires      = ["setuptools>=61.0.0", "wheel"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 
@@ -12,6 +12,11 @@ license = { file = "LICENSE" }
 
 
 dependencies = [
-   'requests >= 2'
+    'requests >= 2'
 ]
 requires-python = ">=3.8.1,<4.0"
+
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
