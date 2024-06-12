@@ -1,3 +1,5 @@
+> [!CAUTION]
+> We've paused all requests and new API keys as of Jun 12, 2024. Please reach out to hello@kay.ai if you have questions.
 <div align="center">
   <a href="http://kay.ai">
     <img src="https://i.ibb.co/7jT6nnL/photo-2023-08-30-10-05-04.jpg" alt="Logo" width="100" height="100">
